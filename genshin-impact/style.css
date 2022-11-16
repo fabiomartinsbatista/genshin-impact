@@ -1,0 +1,111 @@
+@charset "UTF8";
+
+@import url(https://www.dafont.com/pt/moyko.font?text=kamisato+ayaka);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,700&display=swap');
+
+
+@font-face {
+    font-family: 'Moyko';
+    src: url(fontes/Moyko.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --fonte-destaque:'Moyko';
+}
+
+body{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: #16384c;
+    background-image: url(imagens/wp7487062.webp);
+    background-size:100%;
+    background-size: cover;
+    background-position: top;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px ;
+    
+
+}
+
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover{
+    height: 420px;
+}
+
+.container .card .imgBx{
+    position: relative;
+    width: 260px;
+    
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);;
+}
+
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px black;
+
+}
+
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+
+}
+
+.container .card .imgBx img:hover{
+
+    box-shadow:2px 2px 2px 2px gold;
+    border: 1px solid;
+}
+
+h2{
+    font-family: var(--fonte-destaque);
+    color:red;
+}
+a {
+text-decoration:none;
+}
